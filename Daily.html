@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Consumption Monitoring Tool</title>
+    <link rel="stylesheet" href="Daily.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Electricity Consumption Monitoring Tool</h2>
+        <button id="addEntryBtn" class="add-btn">+ Add Electricity Bill</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Total Energy</th>
+                    <th>Energy Use</th>
+                    <th>Saved Energy</th>
+                    <th>Subsidy Cost</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>MON</td>
+                    <td>12.5-13.6 kWh</td>
+                    <td>10.0-11.0 kWh</td>
+                    <td>2.0-2.6 kWh</td>
+                    <td>Rs-65000</td>
+                </tr>
+                <tr>
+                    <td>TUS</td>
+                    <td>10.0-9.6 kWh</td>
+                    <td>6.8-7.0 kWh</td>
+                    <td>1.8-2.6 kWh</td>
+                    <td>Rs-65000</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td>11.5-12.6 kWh</td>
+                    <td>7.0-7.5 kWh</td>
+                    <td>1.0-1.6 kWh</td>
+                    <td>Rs-40000</td>
+                </tr>
+                <tr>
+                    <td>THR</td>
+                    <td>7.5-8.6 kWh</td>
+                    <td>5.0-6.0 kWh</td>
+                    <td>2.0-2.6 kWh</td>
+                    <td>Rs-65000</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td>6.5-9.6 kWh</td>
+                    <td>4.0-5.0 kWh</td>
+                    <td>2.5-4.6 kWh</td>
+                    <td>rs-70000</td>
+                </tr>
+                <tr>
+                    <td>SAT</td>
+                    <td>9.5-10.6 kWh</td>
+                    <td>8.0-7.0 kWh--</td>
+                    <td>1.0-3.6 kWh</td>
+                    <td>rs-60000</td>
+                </tr>
+            </tbody>
+        </table>
+        <canvas id="consumptionChart"></canvas>
+    </div>
+    <script src="Daily.js"></script>
+</body>
+</html>
